@@ -96,10 +96,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-#indeva
-export INDEVA_API_ENDPOINT='https://api-demo.indeva.com.br/stores/sales_by_date'
-export INDEVA_API_TOKEN='2ee4060d-f392-4afc-8d7f-1efdd79ee650'
-DEV_TLD_DOMAINS=dev
 
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
