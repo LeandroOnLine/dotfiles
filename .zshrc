@@ -105,4 +105,7 @@ alias puma='~/Projects/Indeva/./puma-dev -d localhost -sysbind'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-if [ -z $TMUX ]; then; tmux; fi
+export TERM=xterm-256color
+[ -n "$TMUX" ] && export TERM=screen-256color
+
+if [ -z $TMUX ]; then; tmux -2; fi
