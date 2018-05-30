@@ -105,7 +105,6 @@ set updatetime=100
 set shiftwidth=2
 set backspace=2
 set softtabstop=2
-" set cursorcolumn        " Highlight current column
 set cursorline          " Highligh line at the cursor
 set showmatch           " Show matching brackets.
 set expandtab           " Insert spaces when TAB is pressed.
@@ -122,11 +121,5 @@ if &listchars ==# 'eol:$'
 endif
 set list " Show problematic characters.
 
-"if exists('+termguicolors')
-" let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-" let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-"endif
-"
 " Command to generate ctags in ruby (in project folder)
 " ctags -R --languages=ruby --fields=* --exclude=.git --exclude=log . $(bundle list --paths)
