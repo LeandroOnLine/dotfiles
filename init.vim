@@ -27,6 +27,7 @@ Plug 'janko-m/vim-test'
 Plug 'tpope/vim-dispatch'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdcommenter'
+Plug 'szw/vim-tags'
 call plug#end()
 
 " ********** themes **********
@@ -128,4 +129,4 @@ set list " Show problematic characters.
 "endif
 "
 " Command to generate ctags in ruby (in project folder)
-" ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)
+" ctags -R --languages=ruby --fields=* --exclude=.git --exclude=log . $(bundle list --paths)
