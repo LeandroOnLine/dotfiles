@@ -1,2 +1,7 @@
 # dotfiles
-dotfiles configurations
+  dotfiles configurations
+
+## Files
+  init.vim
+  .tmux.conf
+  .zshrc
