@@ -1,6 +1,6 @@
 
 call plug#begin()
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } 
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Plug 'uplus/deoplete-solargraph'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
@@ -12,7 +12,8 @@ Plug 'tpope/vim-rails'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'airblade/vim-gitgutter'
-Plug 'joshdick/onedark.vim'
+" Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
@@ -42,7 +43,11 @@ if (empty($TMUX))
 endif
 
 syntax on
-colorscheme onedark
+" colorscheme onedark
+
+" Gruvbox theme
+colorscheme gruvbox
+set background=dark
 
 " Global variables
 let g:deoplete#enable_at_startup = 1
@@ -87,7 +92,7 @@ map <F2> :NERDTreeToggle<cr>
 " show/hide method navigation bar
 map <F3> :TagbarToggle<cr>
 " Show git view
-map <F5> :GV<cr>  
+map <F5> :GV<cr>
 
 " TDD shortcuts
 nmap <silent> <leader>t :TestNearest<CR>
