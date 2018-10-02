@@ -1,8 +1,6 @@
-cp ~/projects/dotfiles/debian/.tmux.conf ~/
-cp ~/projects/dotfiles/debian/.zshrc ~/
+cp ~/debian/.tmux.conf ~/
+cp ~/debian/.zshrc ~/
 
-if [ ! -d ~/.config/nvim ]; then
-  mkdir ~/.config/nvim
+if [ -d ~/.config/nvim ]; then
+  cp ~/debian/init.vim ~/.config/nvim/
 fi
-
-cp ~/projects/dotfiles/debian/init.vim ~/.config/nvim/
